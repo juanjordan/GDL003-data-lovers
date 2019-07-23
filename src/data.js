@@ -5,4 +5,16 @@ const example = () => {
   return 'example';
 };
 
-window.example = example;
+const listPokemon = pokemon => {
+  return pokemon;
+};
+
+const filterPokemon = (pokemon, type) => {
+  return pokemon.pokemon.filter(pokemon => pokemon.type.includes(type));
+};
+
+window.dataLovers = {
+  example,
+  listPokemon,
+  filterPokemon
+};
